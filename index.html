@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <style>
+  .divider:after,.divider:before {
+    flex: 1;
+    height: 1px;
+    background: #eee;
+  }
+  </style>
+  <title>Pastelería</title>
+</head>
+<body>
+  <!--Centra contenido-->
+  <section class="vh-100">
+    <div class="container py-5 h-100">
+      <!--Contenedor-->
+      <div class="row d-flex align-items-center justify-content-center h-100">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+          <!--Imagen de inicio-->
+          <img src="imgs/inicio.png"class="img-fluid" alt="Imagen de inicio">
+        </div>
+        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+          <h1>¡Disfrutemos celebrar!</h1><br>
+          <!--formulario-->
+          <form class="form" action="sesion.php" method="post">
+            <!-- Ingreso vendedor -->
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="codigov" name="codigov" placeholder="Ingrese su código">
+              <label for="floatingInput">Código vendedor</label>
+            </div><br>
+            <!-- Boton continuar -->
+            <button type="submit" class="fw-bold rounded shadow btn btn-block">Comenzar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

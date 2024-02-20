@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .body {
+            background: #ffe259;
+            background: linear-gradient(to right, #ffa751, #ffe259);
+            }
+
+        .bg{
+            background-image: url(imgs/fondo.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 100vh;
+        }
+
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+    </style>
+    <title>Pastelería</title>
+</head>
+
+<body>
+    <!--Contenedor-->
+    <div class="container w-75 mt-5">
+        <div class="container-fluid">
+            <!--Ajustar el contenido-->
+            <div class="row align-items-center justify-content-center">
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <h1>Selecciona la categoría</h1>
+                </div>
+            </div>
+        </div><br><br>
+        <!--Formulario-->
+        <form action="pcategoria.php" method="POST" class="form">
+            <div class="container marketing rounded shadow">
+                <!--Row para opciones de pastel-->
+                <div class="row">
+                    <!--Pastel tres pisos-->
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="imgs\trespisos.png" alt="Pastel de tres pisos" width="140" height="140">
+                        <h2>Tres pisos</h2>
+                        <p>Un delicioso pastel personalizable de tres sabores.</p>
+                        <!--Boton-->
+                        <p><input type="submit" class="btn btn-secondary" role="button" value="Seleccionar »" name="trespisos"></input></p>
+                    </div>
+                    <!--Pastel dos pisos-->
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="imgs/dospisos.png" alt="Pastel de dos pisos" width="140" height="140">
+                        <h2>Dos pisos</h2>
+                        <p>Dos niveles con dos sabores personalizables.</p>
+                        <p><input type="submit" class="btn btn-secondary" role="button" value="Seleccionar »" name="dospisos"></input></p>
+                    <!--Pastel numero tres-->
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="imgs/numtres.png" alt="Pastel número 3" width="140" height="140">
+                        <h2>Número tres</h2>
+                        <p>Tamaño grande del sabor de tu elección.</p>
+                        <p><input type="submit" class="btn btn-secondary" role="button" value="Seleccionar »" name="numtres"></input></p>
+                    </div>
+                    <!--Pastel numero dos-->
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="imgs/numdos.png" alt="Pastel número dos" width="140" height="140">
+                        <h2>Número dos</h2>
+                        <p>Tamaño mediano con diseños personalizados.</p>
+                        <p><input type="submit" class="btn btn-secondary" role="button" value="Seleccionar »" name="numdos"></input></p>
+                    </div>
+                    <!--Pastel cuadrado-->
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="imgs/pcuadrado.png" alt="Pastel cuadrado" width="140" height="140">
+                        <h2>Cuadrado</h2>
+                        <p>Tamaño personal con sabor y diseño a elección.</p>
+                        <p><input type="submit" class="btn btn-secondary" role="button" value="Seleccionar »" name="cuadrado"></input></p>
+                    </div>
+                    <!--Pastel medio cuadrado-->
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="imgs/medcuadro.png" alt="Pastel medio cuadrado" width="140" height="140">
+                        <h2>Medio cuadrado</h2>
+                        <p>Tamaño mediano con relleno a elección.</p>
+                        <p><input type="submit" class="btn btn-secondary" role="button" value="Seleccionar »" name="medcuadro"></input></p>
+                    </div>
+                </div><!-- /.row -->
+            </div><br><br>
+            <!--Opciones temática-->
+            <div class="form-group">
+                <label for="SeleccionTematica">Temática</label>
+                <select class="form-control" id="tema" name="tema">
+                    <option selected disabled>Seleccionar...</option>
+                    <option value="Supremo">Supremo</option>
+                    <option value="Plus Temático">Plus Temático</option>
+                    <option value="Plus">Plus</option>
+                    <option value="Tropical">Tropical</option>
+                    <option value="Tropical Temático">Tropical Temático</option>
+                </select>
+            </div>
+            <!--Fin formulario-->
+        </form><br>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <h3>¡Disfrutamos lo que hacemos!</h3>
+        </div>
+    </div>
+</body>
+</html>
